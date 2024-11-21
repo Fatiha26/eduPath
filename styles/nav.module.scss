@@ -1,9 +1,14 @@
+@use './_variable.scss' as vars;
+
+
 .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0;
-
+    .navContainer{
+        display: flex;
+    }
     .navlinks{
         padding: 0 1rem;
         color: #000;
@@ -17,7 +22,7 @@
     }
 
     .shoppingIcon{
-      color: #287279;
+      color: vars.$primary-color;
     }
     button{
         width: 5rem;
@@ -25,7 +30,7 @@
         border-radius: 2rem;
         outline: none;
         border: none;
-        background-color: #287279;
+        background-color: vars.$primary-color;
         color: #fff;
     }
   }

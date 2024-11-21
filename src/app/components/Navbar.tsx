@@ -11,7 +11,7 @@ const Navbar = () => {
             <div>
                 <Image src={'/image/Logo.png'}
                     width={50}
-                    height={34}
+                    height={30}
                     alt='logo'>
                 </Image>
             </div>
