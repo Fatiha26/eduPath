@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+
+    .navlinks{
+        padding: 0 1rem;
+        color: #000;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .navBtn{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .shoppingIcon{
+      color: #287279;
+    }
+    button{
+        width: 5rem;
+        height: 2rem;
+        border-radius: 2rem;
+        outline: none;
+        border: none;
+        background-color: #287279;
+        color: #fff;
+    }
+  }
