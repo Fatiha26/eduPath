@@ -1,0 +1,54 @@
+@import './_variable.scss';
+
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F0F1EE;
+    .banner__icon{
+        color: #FF9700;
+        margin-right: 1rem;
+     .starIcon{
+        margin-right: 0.3rem;
+     }
+     .banner__rating{
+        font-size: 24px;
+     }
+}
+
+ h1{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 1rem;
+ }
+ h3{
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 24px;
+ }
+ p{
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: #535353;
+ }
+ button{
+    padding: 1rem 1.8rem;
+    border-radius: 2rem;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    color: #fff; 
+}
+.btn1{
+    margin-right: 1rem;
+    background-color: $primary-color;
+
+}
+.btn2{
+    border: 1px solid $primary-color;
+    color: $primary-color;
+}
+}
