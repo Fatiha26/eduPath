@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../../styles/page.module.scss";
 import Banner from "./components/Banner";
 import ElasticCarousel from "./components/Courses";
+import Provide from "./components/Provide";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
        <main>
          <Banner />
          <ElasticCarousel />
+         <Provide />
        </main>
     </div>
   );

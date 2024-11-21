@@ -1,5 +1,4 @@
 import { FaStar, FaRegStarHalfStroke } from "react-icons/fa6";
-import { TiCalculator, TiTick } from "react-icons/ti";
 
 export const courseData = [
     {
