@@ -1,29 +1,34 @@
-import Image from 'next/image'
-import React from 'react'
-import NavLinks from './NavLinks'
-import { HiOutlineShoppingBag } from "react-icons/hi2";
+"use client"
+
+import React, { useState } from 'react';
+import Image from 'next/image';
+import NavLinks from './NavLinks';
+import { HiOutlineShoppingBag } from 'react-icons/hi2';
+import { FaBars } from 'react-icons/fa'; // Mobile menu icon
 import styles from "../../../styles/nav.module.scss";
 
-
 const Navbar = () => {
-    return (
-        <nav className={styles.navbar}>
-            <div>
-                <Image src={'/image/Logo.png'}
-                    width={50}
-                    height={30}
-                    alt='logo'>
-                </Image>
-            </div>
-            <NavLinks />
-            <div className={styles.navBtn}>
-            <HiOutlineShoppingBag size={26} className={styles.shoppingIcon} />
-            <button>Login</button>
-            </div>
-                
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle the menu
 
-        </nav>
-    )
-}
+  // Toggle mobile menu visibility
+  const toggleMenu = () => {
+    setIsMenuOpen(prevState => !prevState);
+  };
 
-export default Navbar
+  return (
+    <nav className={styles.navbar}>
+      <div>
+        <Image src={'/image/Logo.png'} width={50} height={30} alt='logo' />
+      </div>
+      <NavLinks isMenuOpen={isMenuOpen} />
+      <FaBars size={26} onClick={toggleMenu} className={styles.menuIcon} />
+
+      <div className={styles.navBtn}>
+        <HiOutlineShoppingBag size={26} className={styles.shoppingIcon} />
+        <button>Login</button>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

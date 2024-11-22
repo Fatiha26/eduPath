@@ -1,7 +1,7 @@
 @import "./_variable.scss";
 
 .review {
-  padding: 4rem;
+  padding: 4rem 8rem;
   .heading {
     text-align: center;
     font-weight: bold;
@@ -30,6 +30,68 @@
       margin-top: 1.8rem;
       font-size: 16px;
       text-align: justify;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .review {
+    padding: 3rem 4rem;
+
+    .review__card {
+      margin: 2rem 0;
+      padding: 1.5rem;
+
+      .review__card__name {
+        font-size: 14px;
+      }
+
+      .review__card__text {
+        font-size: 14px;
+      }
+    }
+
+    .heading {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .review {
+    padding: 2rem 2rem;
+
+    .review__card {
+      margin: 2rem 0;
+      padding: 1rem;
+
+      .review__card__name {
+        font-size: 13px;
+      }
+
+      .review__card__text {
+        font-size: 13px;
+      }
+    }
+
+    .heading {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review {
+    padding: 1rem;
+
+    .review__card {
+      padding: 0.8rem;
+      margin: 1rem 0;
+    }
+
+    .heading {
+      font-size: 20px;
     }
   }
 }

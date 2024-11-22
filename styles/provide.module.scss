@@ -2,7 +2,7 @@
 
 
 .accordion__body{
-    padding: 4rem;
+    padding: 4rem 8rem;
     h2 {
         font-weight: bold;
         font-size: 40px;
@@ -88,3 +88,85 @@
     border: 1px solid $primary-color;
     color: $primary-color;
   }
+
+
+  @media screen and (max-width: 1024px) {
+    .accordion__body {
+      padding: 2rem 4rem;
+  
+      h2 {
+        font-size: 32px;
+      }
+  
+      .accordion__inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  
+    .accordion__title {
+      padding: 12px;
+      font-size: 14px;
+  
+      .checkmark {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        margin-right: 6px;
+      }
+    }
+  
+    .accordion__content {
+      padding: 12px;
+      font-size: 13px;
+    }
+  
+    .btn {
+      font-size: 13px;
+      padding: 0.8rem 1.5rem;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .accordion__body {
+      padding: 1rem 2rem;
+      img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+      
+      h2 {
+        font-size: 28px;
+      }
+  
+      .accordion__inner {
+        align-items: flex-start;
+      }
+    }
+  
+    .accordion__title {
+      padding: 10px;
+      font-size: 12px;
+  
+      .checkmark {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+        margin-right: 5px;
+      }
+    }
+  
+    .accordion__content {
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    .btn {
+      font-size: 12px;
+      padding: 0.6rem 1.2rem;
+      margin-top: 1.5rem;
+    }
+  }
+  
