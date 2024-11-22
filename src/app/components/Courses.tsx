@@ -26,7 +26,7 @@ const ElasticCarousel = () => {
         build resilience, and foster a sense of inner peace and balance.
       </p>
       <div className={styles.course__slider}>
-        <Carousel breakPoints={breakPoints} pagination={false}>
+        <Carousel breakPoints={breakPoints} pagination={false} enableAutoPlay={true} autoPlaySpeed={3000}>
           {courseData.map((item, index) => (
             <div key={index} className={styles.course__card}>
               <div className={styles.image__div}>

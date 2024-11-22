@@ -1,3 +1,6 @@
+@import './_variable.scss';
+
+
 .accordion__body{
     padding: 4rem;
     h2 {
@@ -59,7 +62,7 @@
       font-size: 14px;
       margin-right: 8px;
       color: #fff; 
-      background-color: #535353;
+      background-color: #00000080;
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     }
   }
@@ -72,4 +75,16 @@
     line-height: 1.6;
     background-color: #fff;
   }
-  
+  .btn{
+    padding: 1rem 1.8rem;
+    border-radius: 2rem;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    color: #fff; 
+    margin-top: 3rem;
+    background-color: #fff;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }

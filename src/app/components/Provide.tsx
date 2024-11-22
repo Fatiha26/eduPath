@@ -53,6 +53,7 @@ const Provide = () => {
                         )}
                     </div>
                 ))}
+              <button className={styles.btn}>Learn More About Our Services</button>
             </div>
             <div>
                 <Image src='/image/accordion.png'

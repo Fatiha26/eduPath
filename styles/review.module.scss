@@ -1,0 +1,35 @@
+@import "./_variable.scss";
+
+.review {
+  padding: 4rem;
+  .heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .review__card {
+    margin: 4rem 0;
+    border-radius: 0.8rem;
+    border: 1px solid #5353534a;
+    background-color: #9998e12a;
+    margin-right: 2rem;
+    padding: 2rem;
+
+    .review__card__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .review__card__name {
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+
+    .review__card__text {
+      margin-top: 1.8rem;
+      font-size: 16px;
+      text-align: justify;
+    }
+  }
+}
