@@ -1,4 +1,6 @@
 "use client"
+
+
 import React from "react";
 import { courseData } from "../../utils/helper/dummy-data/courses";
 import Image from "next/image";
