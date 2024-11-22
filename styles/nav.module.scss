@@ -68,12 +68,14 @@
     .showMenu {
       position: absolute;
       right: 0;
-      top: 50px;
+      top: 60px;
       display: flex;
       flex-direction: column;
       width: 100%;
       align-items: flex-start;
       background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 0.8rem 1rem;
     }
 
     .arrowicon {
