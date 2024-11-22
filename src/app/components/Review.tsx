@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import ReactElasticCarousel from "react-elastic-carousel";
+import Carousel from "react-elastic-carousel";
 import { reviewData } from "../../utils/helper/dummy-data/review";
 import styles from "../../../styles/review.module.scss";
 
@@ -18,7 +18,7 @@ const Review = () => {
       <h2 className={styles.heading}>
         Learners love EduPath. See why <br /> they rate us 4.9 out of 5
       </h2>
-      <ReactElasticCarousel
+      <Carousel
         breakPoints={breakPoints}
         pagination={true}
         enableAutoPlay={true}
@@ -52,7 +52,7 @@ const Review = () => {
             </div>
           </div>
         ))}
-      </ReactElasticCarousel>
+      </Carousel>
     </div>
   );
 };
