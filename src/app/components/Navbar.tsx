@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div>
-        <Image src={'/image/Logo.png'} width={50} height={30} alt='logo' />
+        <h1>Logo</h1>
       </div>
       <NavLinks isMenuOpen={isMenuOpen} />
       <FaBars size={26} onClick={toggleMenu} className={styles.menuIcon} />

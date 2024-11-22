@@ -5,7 +5,10 @@
   justify-content: space-around;
   align-items: center;
   padding: 0.8rem 0;
-  
+  h1{
+    font-weight: 700;
+    font-size: 32px;
+  }
   .navContainer {
     display: flex;
   }
@@ -15,9 +18,7 @@
     color: #000;
     font-weight: 500;
     font-size: 1rem;
-  }
-  &.hasDropdown{
-    color: red;
+
   }
   .navBtn {
     display: flex;
@@ -40,7 +41,10 @@
     background-color: $primary-color;
     color: #fff;
   }
-
+  .arrowicon{
+    margin-left: -12px; 
+    margin-bottom: -4px;   
+  }
   .menuIcon {
     display: none; 
     cursor: pointer;
@@ -74,13 +78,18 @@
       background-color: #fff;
     }
 
+    .arrowicon{
+      margin-left: -12px; 
+      margin-bottom: -4px;   
+    }
+
     .navItem {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
-    }
 
+    }
     .navlinks {
       padding: 0.2rem 1rem;
       width: 100%;

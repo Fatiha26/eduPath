@@ -23,21 +23,37 @@
       border: 1px solid #5353534A;
       .image__div{
         position:relative;
-        .hover__icon{
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            display: none;
-        .top__icon{
-            color: #000;
+        .hover__icon {
+          position: absolute;
+          top: 10px;
+          right: 0px;
+          z-index: 10;
+          display: none;      
+          .top__icon {
+            color: #000; /* Black icon color */
             margin-right: 8px;
+            background-color: #fff; /* White circular background */
+            border-radius: 50%; /* Make it circular */
+            width: 42px; /* Ensure a uniform circle */
+            height: 42px;
+            display: flex; /* Center the icon */
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+            cursor: pointer;
+            padding: 5px; 
+
+          }
+        
         }
+        
         }
       }
+      .course__card:hover .hover__icon{
+        display: flex;
     }
-    .course__card:hover .hover__icon{
-        display: block;
     }
+    
     .course__link {
       margin-top: 1rem;
       padding: 1rem;
@@ -122,10 +138,10 @@
     }
   }
   
-}
 .course__card:hover{
   background-color: #9998E11A;
   border: 1px solid #5353536A;
+  cursor: pointer;
 }
 
 

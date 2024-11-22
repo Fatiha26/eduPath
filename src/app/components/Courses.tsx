@@ -32,8 +32,8 @@ const ElasticCarousel = () => {
               <div className={styles.image__div}>
               <Image src={item.image} alt="course" width={400} height={230} />
               <div className={styles.hover__icon}>
-                <FiShoppingCart size={24} className={styles.top__icon}/>
-                <FaRegHeart size={24} className={styles.top__icon}/>
+                <FiShoppingCart size={16} className={styles.top__icon}/>
+                <FaRegHeart size={16} className={styles.top__icon}/>
               </div>
               </div>
               <div className={styles.course__link}>
