@@ -38,27 +38,27 @@ const Provide = () => {
         <div className={styles.accordion__body}>
             <h2>We provide...</h2>
             <div className={styles.accordion__inner}>
-            <div className={styles.accordion}>
-                {data.map((item, index) => (
-                    <div key={index} className={styles.accordion__item}>
-                        <div
-                            className={`${styles.accordion__title} ${index === activeIndex ? styles.active : ""
-                                }`}
-                            onClick={() => handleToggle(index)}
-                        >
-                            <span className={styles.checkmark}>&#10003;</span> {item.title}
+                <div className={styles.accordion}>
+                    {data.map((item, index) => (
+                        <div key={index} className={styles.accordion__item}>
+                            <div
+                                className={`${styles.accordion__title} ${index === activeIndex ? styles.active : ""
+                                    }`}
+                                onClick={() => handleToggle(index)}
+                            >
+                                <span className={styles.checkmark}>&#10003;</span> {item.title}
+                            </div>
+                            {index === activeIndex && (
+                                <div className={styles.accordion__content}>{item.content}</div>
+                            )}
                         </div>
-                        {index === activeIndex && (
-                            <div className={styles.accordion__content}>{item.content}</div>
-                        )}
-                    </div>
-                ))}
-              <button className={styles.btn}>Learn More About Our Services</button>
-            </div>
-            <div>
-                <Image src='/image/accordion.png'
-                alt="accordion" width={585} height={600} />
-            </div>
+                    ))}
+                    <button className={styles.btn}>Learn More About Our Services</button>
+                </div>
+                <div>
+                    <Image src='/image/accordion.png'
+                        alt="accordion" width={585} height={600} />
+                </div>
             </div>
         </div>
     );

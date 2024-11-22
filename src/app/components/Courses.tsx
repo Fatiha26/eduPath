@@ -30,11 +30,11 @@ const ElasticCarousel = () => {
           {courseData.map((item, index) => (
             <div key={index} className={styles.course__card}>
               <div className={styles.image__div}>
-              <Image src={item.image} alt="course" width={400} height={230} />
-              <div className={styles.hover__icon}>
-                <FiShoppingCart size={16} className={styles.top__icon}/>
-                <FaRegHeart size={16} className={styles.top__icon}/>
-              </div>
+                <Image src={item.image} alt="course" width={400} height={230} />
+                <div className={styles.hover__icon}>
+                  <FiShoppingCart size={16} className={styles.top__icon} />
+                  <FaRegHeart size={16} className={styles.top__icon} />
+                </div>
               </div>
               <div className={styles.course__link}>
                 <a href="#" className={styles.course__link1}>{item.link1}</a>
@@ -56,8 +56,8 @@ const ElasticCarousel = () => {
               </div>
               <div className={styles.course__footer}>
                 <div className={styles.instructor__info}>
-                  <Image src={item.img2} alt="Instructor" width={40} height={40}  
-                  style={{ borderRadius: '50%', width: '40px', height: '40px' }}
+                  <Image src={item.img2} alt="Instructor" width={40} height={40}
+                    style={{ borderRadius: '50%', width: '40px', height: '40px' }}
                   />
                   <p>{item.name}</p>
                 </div>

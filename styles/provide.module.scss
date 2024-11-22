@@ -1,172 +1,168 @@
-@import './_variable.scss';
+@import "./_variable.scss";
 
-
-.accordion__body{
-    padding: 4rem 8rem;
-    h2 {
-        font-weight: bold;
-        font-size: 40px;
-        margin-bottom: 1rem;
-      }
-      .accordion__inner{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+.accordion__body {
+  padding: 4rem 8rem;
+  h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+  .accordion__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .accordion {
-    border-radius: 8px;
-    overflow: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion__item {
+  border-bottom: 1px solid #ddd;
+
+  &:last-child {
+    border-bottom: none;
   }
-  
-  .accordion__item {
-    border-bottom: 1px solid #ddd;
-  
-    &:last-child {
-      border-bottom: none;
+}
+
+.accordion__title {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: 16px;
+  color: #434242;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &.active {
+    background-color: #eceffe;
+
+    .checkmark {
+      background-color: #9998e1;
+      color: #fff;
     }
   }
-  
-  .accordion__title {
+
+  .checkmark {
     display: flex;
     align-items: center;
-    padding: 16px;
-    font-size: 16px;
-    color: #434242;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  
-    &:hover {
-      background-color: #f0f0f0;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 8px;
+    color: #fff;
+    background-color: #00000080;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+}
+
+.accordion__content {
+  padding: 16px;
+  font-size: 14px;
+  text-align: justify;
+  color: #000;
+  line-height: 1.6;
+  background-color: #fff;
+}
+.btn {
+  padding: 1rem 1.8rem;
+  border-radius: 2rem;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  color: #fff;
+  margin-top: 3rem;
+  background-color: #fff;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+}
+
+@media screen and (max-width: 1024px) {
+  .accordion__body {
+    padding: 2rem 4rem;
+
+    h2 {
+      font-size: 32px;
     }
-  
-    &.active {
-      background-color: #eceffe;
-    
-  
-      .checkmark {
-        background-color: #9998e1; 
-        color: #fff; 
-      }
+
+    .accordion__inner {
+      flex-direction: column;
+      align-items: flex-start;
     }
-  
+  }
+
+  .accordion__title {
+    padding: 12px;
+    font-size: 14px;
+
     .checkmark {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 24px; 
-      height: 24px;
-      border-radius: 50%; 
-      font-size: 14px;
-      margin-right: 8px;
-      color: #fff; 
-      background-color: #00000080;
-      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      margin-right: 6px;
     }
   }
-  
+
   .accordion__content {
-    padding: 16px;
-    font-size: 14px;
-    text-align: justify;
-    color: #000;
-    line-height: 1.6;
-    background-color: #fff;
-  }
-  .btn{
-    padding: 1rem 1.8rem;
-    border-radius: 2rem;
-    font-size: 14px;
-    font-weight: 600;
-    outline: none;
-    border: none;
-    color: #fff; 
-    margin-top: 3rem;
-    background-color: #fff;
-    border: 1px solid $primary-color;
-    color: $primary-color;
+    padding: 12px;
+    font-size: 13px;
   }
 
+  .btn {
+    font-size: 13px;
+    padding: 0.8rem 1.5rem;
+    margin-top: 2rem;
+  }
+}
 
-  @media screen and (max-width: 1024px) {
-    .accordion__body {
-      padding: 2rem 4rem;
-  
-      h2 {
-        font-size: 32px;
-      }
-  
-      .accordion__inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+@media screen and (max-width: 768px) {
+  .accordion__body {
+    padding: 1rem 2rem;
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
     }
-  
-    .accordion__title {
-      padding: 12px;
-      font-size: 14px;
-  
-      .checkmark {
-        width: 20px;
-        height: 20px;
-        font-size: 12px;
-        margin-right: 6px;
-      }
+
+    h2 {
+      font-size: 28px;
     }
-  
-    .accordion__content {
-      padding: 12px;
-      font-size: 13px;
-    }
-  
-    .btn {
-      font-size: 13px;
-      padding: 0.8rem 1.5rem;
-      margin-top: 2rem;
+
+    .accordion__inner {
+      align-items: flex-start;
     }
   }
-  
-  @media screen and (max-width: 768px) {
-    .accordion__body {
-      padding: 1rem 2rem;
-      img {
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
-      }
-      
-      h2 {
-        font-size: 28px;
-      }
-  
-      .accordion__inner {
-        align-items: flex-start;
-      }
-    }
-  
-    .accordion__title {
-      padding: 10px;
-      font-size: 12px;
-  
-      .checkmark {
-        width: 18px;
-        height: 18px;
-        font-size: 10px;
-        margin-right: 5px;
-      }
-    }
-  
-    .accordion__content {
-      padding: 10px;
-      font-size: 12px;
-    }
-  
-    .btn {
-      font-size: 12px;
-      padding: 0.6rem 1.2rem;
-      margin-top: 1.5rem;
+
+  .accordion__title {
+    padding: 10px;
+    font-size: 12px;
+
+    .checkmark {
+      width: 18px;
+      height: 18px;
+      font-size: 10px;
+      margin-right: 5px;
     }
   }
-  
+
+  .accordion__content {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 0.6rem 1.2rem;
+    margin-top: 1.5rem;
+  }
+}
